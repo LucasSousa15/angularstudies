@@ -1,0 +1,7 @@
+- Angular Language service
+- Auto close Tag
+- Auto Rename Tag
+- Tema (Aura)
+- Icons (Material Icon)
+- es lint
+- editorConfig, Prettier, eslint
