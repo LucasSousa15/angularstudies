@@ -12,4 +12,7 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   title = 'diretivas';
+  isAliveCard = true;
+  skills:string[] = [] 
+
 }

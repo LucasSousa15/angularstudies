@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule  } from '@angular/common';
 
 @Component({
@@ -8,6 +8,27 @@ import { CommonModule  } from '@angular/common';
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
-export class CardComponent {
+export class CardComponent  {
+  produtos:string[] = []
+  menuType:string = "user"
+
+
+  constructor() {
+    this.produtos = [
+      "mouse",
+      "teclado",
+      "celular",
+
+    ]
+  }
+
+  adicionar () {
+    this.produtos.push("Miranha")
+  }
+
+  remover (index : number) {
+    alert(index)
+    //this.produtos.pop()
+  }
 
 }
