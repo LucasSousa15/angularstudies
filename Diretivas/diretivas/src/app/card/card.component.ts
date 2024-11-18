@@ -10,7 +10,7 @@ import { CommonModule  } from '@angular/common';
 })
 export class CardComponent  {
   produtos:string[] = []
-  menuType:string = "user"
+  menuType:string = "admin"
 
 
   constructor() {

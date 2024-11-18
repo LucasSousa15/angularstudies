@@ -6,13 +6,13 @@
 <button (click)="adicionar ()">Adicionar</button>
 
 <div [ngSwitch]="menuType">
-    <div *ngSwitch="'user'">
+    <div *ngSwitchDefault="'user'">
         <ul>
             <li>Editar perfil</li>
             <li>Adicionar Cartão</li>
         </ul>
     </div>
-    <div *ngSwitch="'admin'">
+    <div *ngSwitchCase="'admin'">
         <ul>
             <li>Editar perfil</li>
             <li>Adicionar Cartão</li>
@@ -20,7 +20,7 @@
         </ul>
 
     </div>
-    <div *ngSwitch="'superuser'">
+    <div *ngSwitchCase="'superuser'">
         <ul>
             <li>Editar perfil</li>
             <li>Adicionar Cartão</li>
