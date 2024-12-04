@@ -10,7 +10,7 @@ import { CommonModule  } from '@angular/common';
 })
 export class CardComponent  {
   produtos:string[] = []
-  menuType:string = "admin"
+  menuType:string = "user"
 
 
   constructor() {
@@ -25,10 +25,8 @@ export class CardComponent  {
   adicionar () {
     this.produtos.push("Miranha")
   }
-
   remover (index : number) {
-    alert(index)
-    //this.produtos.pop()
+    this.produtos.splice(index, 1)
   }
 
 }
