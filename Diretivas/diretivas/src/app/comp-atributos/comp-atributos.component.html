@@ -5,6 +5,8 @@
 
 <h1 [ngStyle]="{'background':corFundo, 'color': corDaFonte}">Curso Angular</h1>
 
+<ng-content select="h2"></ng-content>
+
 <h1>Lista de Compras</h1>
 <p>Adicione um Item</p>
 <input type="text" [(ngModel)]="item">
@@ -27,3 +29,5 @@
 <ng-template ngIf="true">
   <a href="#">ADICIONAR AO CARRINHO</a>
 </ng-template>
+
+<ng-content select="p"></ng-content>
