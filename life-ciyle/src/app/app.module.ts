@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TitleComponent } from './title/title.component';
 import { CheckSamplesComponent } from './check-samples/check-samples.component';
+import { ListaModule } from './lista/lista.module'
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CheckSamplesComponent } from './check-samples/check-samples.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ListaModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
